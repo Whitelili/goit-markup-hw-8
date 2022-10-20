@@ -1,0 +1,45 @@
+// base
+
+@import "./utilits/variables";
+@import "./utilits/placeholder";
+@import "./utilits/mixin";
+@import "./utilits/utilits";
+@import "./components/base/common";
+
+// components
+// common
+@import "./components/logo";
+// header
+@import "./components/header/header";
+@import "./components/header/current";
+@import "./components/header/_navigation-menu";
+
+// footer
+@import "./components/footer/footer-main";
+@import "./components/footer/footer-communication-part";
+@import "./components/footer/footer-join-part";
+@import "./components/footer/footer-sign-part";
+
+
+
+// studio page
+// hero
+@import "./components/page-studio/hero-section";
+// advantage section
+@import "./components/page-studio/advantage-section";
+// what we do section
+@import "./components/page-studio/what-we-do-section";
+// team section
+@import "./components/page-studio/team-section/team-section";
+@import "./components/page-studio/team-section/team-social-svg";
+// clients section
+@import "./components/page-studio/clients-section";
+
+// portfolio page
+@import "./components/page-poftfolio/portfolio-buttons";
+@import "./components/page-poftfolio/portfolio-list";
+@import "./components/page-poftfolio/portfolio-list-animation";
+
+
+// modal
+@import "./components/modal/modal";

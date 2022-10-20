@@ -1,0 +1,80 @@
+.communication {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+.communication-list {
+  @extend %list;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.communication-list__item {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.communication-list__adress {
+  @extend %link;
+  color: var(--primary-white-color);
+
+  @media screen and (min-width: 1200px) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    @media screen and (min-width: 1200px) {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.communication-list__mail {
+  @extend %link;
+  color: var(--address-color);
+
+  @media screen and (min-width: 1200px) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    @media screen and (min-width: 1200px) {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.communication-list__tel {
+  @extend %link;
+  color: var(--address-color);
+
+  @media screen and (min-width: 1200px) {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    @media screen and (min-width: 1200px) {
+      color: var(--accent-color);
+    }
+  }
+}

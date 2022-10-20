@@ -1,0 +1,24 @@
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-thumb__hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  height: 100%;
+  padding: 63px 24px;
+
+  @include font(400, 18px, 1.56);
+
+  background-color: var(--secondary-animation-bg-color);
+  color: var(--primary-white-color);
+}
+
+.project-list__item:hover .card-thumb__hover-text {
+  transform: translateY(0);
+}

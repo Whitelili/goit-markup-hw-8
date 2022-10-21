@@ -393,8 +393,20 @@ body {
   fill: var(--accent-color);
 }
 
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
 .mobile-menu__list {
-  margin-bottom: 302px;
+  margin-bottom: auto;
+  padding-bottom: 50px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -414,6 +426,7 @@ body {
 
 .interactions-list {
   margin-bottom: 64px;
+  padding-top: 50px;
 }
 
 .interactions-item {
@@ -445,6 +458,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .mobile-menu__border {
@@ -474,12 +488,21 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .communication-join-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .communication-join-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -493,12 +516,6 @@ body {
 @media screen and (max-width: 767px) {
   .communication {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .communication {
-    margin-right: 165px;
-    margin-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -575,11 +592,6 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .join {
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .join {
     margin-right: 93px;
@@ -631,12 +643,6 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .sign {
-    margin-right: 215px;
-  }
 }
 
 .footer-form {
@@ -1094,6 +1100,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -1231,7 +1240,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 320px;
-  height: 90vh;
+  max-height: 90vh;
   padding: 40px;
   overflow-y: scroll;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

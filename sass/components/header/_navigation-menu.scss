@@ -67,11 +67,16 @@ overflow: scroll;
     fill: var(--accent-color);
   }
 }
-
+.mobile-menu{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
 .mobile-menu__list {
   @extend %list;
-  margin-bottom: 302px;
+  margin-bottom: auto;
+  padding-bottom: 50px;
 
   @include font(500, 40px, 1.17);
   letter-spacing: 0.02em;
@@ -92,6 +97,9 @@ overflow: scroll;
 .interactions-list {
   @extend %list;
   margin-bottom: 64px;
+  padding-top: 50px;
+    
+  
 }
 
 .interactions-item {
@@ -119,6 +127,10 @@ overflow: scroll;
   @extend %list;
   display: flex;
   flex-wrap: wrap;
+  
+    padding-bottom: 50px;
+ 
+    
 }
 
 .mobile-menu__border {
